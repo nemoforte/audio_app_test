@@ -1,9 +1,16 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.example">
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
-        android:label="audio_app_test"
-        android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
-        <activity
+            android:label="example"
+            android:name="${applicationName}"
+            android:icon="@mipmap/ic_launcher"
+            android:usesCleartextTraffic="true">
+
+
+    <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
